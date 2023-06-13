@@ -1,0 +1,13 @@
+footer{
+    background-color: var(--gray-5);
+}
+
+#footer{
+    max-width: min(960px,90vw);
+    margin: 0 auto;
+    padding: 4vmin 0;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+}
