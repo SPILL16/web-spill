@@ -1,5 +1,5 @@
 {
   "routes": [
-    { "src": "/", "dest": "/HTML/inti/index.html" }
+    { "src": "/index.html", "dest": "/HTML/inti/index.html" }
   ]
 }
