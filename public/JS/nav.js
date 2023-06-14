@@ -2,6 +2,13 @@ class NavBar extends HTMLElement{
     constructor() {
         super();
 
+        this.home = "/index.html";
+        this.about = "/HTML/about.html";
+        this.blog = "/404.html"
+        this.proj = "/404.html"
+        this.desHome = "/HTML/design/design.html";
+        this.progHome = "/404.html";
+
         this.innerHTML = 
         `
             <nav id="main-nav" class="main-nav-b">
