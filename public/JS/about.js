@@ -61,12 +61,12 @@ class cardOne extends HTMLElement{
     constructor() {
         super();
 
-        this.foto = this.getAttribute('foto') ? this.getAttribute('foto') : "../../img/temp_4x3.png";
+        this.foto = this.getAttribute('foto') ? this.getAttribute('foto') : "/IMG/temp_4x3.png";
 
         this.innerHTML = 
         `
             <div class="card-one-style">
-                <img class="card-stamp" src="../../img/Square\ Black.svg" alt=""/>
+                <img class="card-stamp" src="/IMG/Square\ Black.svg" alt=""/>
                 <div class="card-header">
                     <p class="card-h">
                         SPILL Member Card
@@ -92,7 +92,7 @@ class cardOne extends HTMLElement{
                     </div>
                     <div class="card-img">
                         <div class="card-pict" style="background-image: url(${this.foto});"></div>
-                        <img class="card-spill" src="../../img/Horizontal\ Black.svg" alt="SPILL"/>
+                        <img class="card-spill" src="/IMG/Horizontal\ Black.svg" alt="SPILL"/>
                     </div>
                 </div>
             </div>
