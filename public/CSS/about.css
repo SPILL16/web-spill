@@ -137,6 +137,7 @@ code{
 
 .digital{
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
     background-color:#ceff99;
     background-image:
