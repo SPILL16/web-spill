@@ -298,7 +298,7 @@ code{
     height: var(--logo-about-size);
     border-radius: 30px;
     display: block;
-    background: url(../img/Square\ Black.svg);
+    background: url(/IMG/Square\ Black.svg);
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
