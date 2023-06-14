@@ -8,6 +8,8 @@ body{
 }
 
 .-wraper{
+    --width: 10px;
+    
     background: var(--gray-5);
     display: flex;
     justify-content: center;
@@ -15,7 +17,6 @@ body{
     flex-direction: column;
     padding: 6vh 8vw;
     position: relative;
-    --width: 10px;
 }.-wraper::after{
     content: "";
     position: absolute;
