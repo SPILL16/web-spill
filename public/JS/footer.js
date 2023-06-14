@@ -75,4 +75,4 @@ class Footer extends HTMLElement{
     }
 }
 
-window.customElements.define('footerT', Footer);
+window.customElements.define('footer-t', Footer);
