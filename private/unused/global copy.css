@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+html{
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 1em;
+}
+
+::-webkit-scrollbar-track{
+    margin-block:.5em;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #777;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #333;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    /* font-family:'lexend',sans-serif; */
+}
+
+p{
+    font-family:'lexend',sans-serif;
+}
+
+body{
+     --a-hover: white;
+
+     /* Color Liblarry Fireship.io*/
+    --red:#ff3860;
+    --red-dark:#ff1443;
+    --red-light:#ff5c7c;
+    --blue:#498afb;
+    --blue-dark:#2674fa;
+    --blue-light:#6ca0fc;
+    --orange:#fa8142;
+    --orange-dark:#f96a1f;
+    --orange-light:#fb9865;
+    --green:#09c372;
+    --green-dark:#07a15e;
+    --green-light:#0be586;
+
+    --green-darker: rgb(8, 105, 63);
+    --green-darkerer: rgb(4, 39, 24);
+
+    --purple:#9166cc;
+    --purple-dark:#7d4bc3;
+    --purple-light:#a481d5;
+    --pink:#ff4088;
+    --pink-dark:#ff1c72;
+    --pink-light:#ff649e;
+    --gray-0:#f8f8f8;
+    --gray-1:#dbe1e8;
+    --gray-2:#b2becd;
+    --gray-3:#6c7983;
+    --gray-4:#454e56;
+    --gray-5:#2a2e35;
+    --gray-6:#12181b;
+}
+
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--a-hover);
+    text-decoration: underline;
+    transition-property:all;
+    transition-duration:0.5s;
+}
+
+nav a:hover{
+    color: var(--nav-a-hover);
+    text-decoration: none;
+}
+
+abbr{
+    font-variant: none;
+    text-decoration: none;
+}
+
+.ro180{
+    transform: rotate(180deg);
+}
+
+.vflex-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}.vflex-l{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}.vflex-r{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+footer{
+    /**display: flex;
+    align-items: center;
+    justify-content: center;**/
+    background: #333;
+}
+
+.pq{
+    max-width: 960px;
+    margin:0 auto;
+    display: flex;
+    justify-content: start;
+}
+
+.pq  p{
+    color: white;
+    padding: 40px 25px;
+    padding-bottom: 20px;
+}
+
+.clog{
+    max-width: 960px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+}
+
+.clog-h{
+    color: white;
+    padding: 5px 25px;
+    padding-top:0;
+    font-weight: 400;
+    font-size:16px;
+}
+
+.cl-title{
+    color: white;
+    padding: 5px 25px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.cl-list{
+    color: white;
+    padding: 5px 25px;
+    padding-top:0;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.cl-list .li{
+    padding: 2px 0;
+}
+
+.ttp{
+    padding-bottom: 38px;
+}
+
+/* JS Class*/
+
+.sl-up{
+    transform: translateY(50%);
+}
+
+.sl-down{
+    transform: translateY(-50%);
+}
+
+.sl-up,
+.sl-down{
+    transition: opacity 0.5s ease-in, transform 0.4s ease-in;
+    opacity: 0;
+}
+
+.sl-up.appear,
+.sl-down.appear{
+    transform: translateY(0);
+    opacity: 1;
+}
