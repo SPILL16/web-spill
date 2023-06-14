@@ -60,21 +60,21 @@ html{
 }
 
 .progBack{
-    background: url(../img/home/Prog_R.png);
+    background: url(/IMG/home/Prog_R.png);
     background-position: left;
     background-size: cover;
 }.progFront{
-    background: url(../img/home/Prog_L.png);
+    background: url(/IMG/home/Prog_L.png);
     background-position: right;
     background-size: cover;
 }
 
 .desBack{
-    background: url(../img/home/Dis_L.png);
+    background: url(/IMG/home/Dis_L.png);
     background-position: right;
     background-size: cover;
 }.desFront{
-    background: url(../img/home/Dis_R.png);
+    background: url(/IMG/home/Dis_R.png);
     background-position: left;
     background-size: cover;
 }
