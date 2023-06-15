@@ -4,7 +4,9 @@ html{
 
 #main-section{
     height:calc(100vh - var(--nav-height));
+    height:calc(100dvh - var(--nav-height));
     width: 100vw;
+    width: 100dvw;
 }
 
 .link .home{
@@ -147,6 +149,7 @@ html{
     flex-direction: column;
     scale: 2;
     transition: all 0.5s linear;
+    -webkit-tap-highlight-color: transparent;
 }.index-menu-icon{
     transition: all 0.5s ease-in-out;
     color: white;
