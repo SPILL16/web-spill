@@ -2,12 +2,12 @@ class Footer extends HTMLElement{
     constructor() {
         super();
 
-        this.home = "spill/";
-        this.about = "spill/HTML/about.html";
-        this.blog = "spill/404.html"
-        this.proj = "spill/404.html"
-        this.desHome = "spill/HTML/design/design.html";
-        this.progHome = "spill/404.html";
+        this.home = "/spill/";
+        this.about = "/spill/HTML/about.html";
+        this.blog = "/spill/404.html"
+        this.proj = "/spill/404.html"
+        this.desHome = "/spill/HTML/design/design.html";
+        this.progHome = "/spill/404.html";
 
         this.innerHTML = 
         `

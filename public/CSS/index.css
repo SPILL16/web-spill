@@ -62,21 +62,21 @@ html{
 }
 
 .progBack{
-    background: url(/IMG/home/Prog_R.png);
+    background: url(/spill/IMG/home/Prog_R.png);
     background-position: left;
     background-size: cover;
 }.progFront{
-    background: url(/IMG/home/Prog_L.png);
+    background: url(/spill/IMG/home/Prog_L.png);
     background-position: right;
     background-size: cover;
 }
 
 .desBack{
-    background: url(/IMG/home/Dis_L.png);
+    background: url(/spill/IMG/home/Dis_L.png);
     background-position: right;
     background-size: cover;
 }.desFront{
-    background: url(/IMG/home/Dis_R.png);
+    background: url(/spill/IMG/home/Dis_R.png);
     background-position: left;
     background-size: cover;
 }

@@ -66,7 +66,7 @@ class cardOne extends HTMLElement{
         this.innerHTML = 
         `
             <div class="card-one-style">
-                <img class="card-stamp" src="spill/IMG/Square\ Black.svg" alt=""/>
+                <img class="card-stamp" src="/spill/IMG/Square\ Black.svg" alt=""/>
                 <div class="card-header">
                     <p class="card-h">
                         SPILL Staff Card
@@ -92,7 +92,7 @@ class cardOne extends HTMLElement{
                     </div>
                     <div class="card-img">
                         <div class="card-pict" style="background-image: url(${this.foto});"></div>
-                        <img class="card-spill" src="spill/IMG/Horizontal\ Black.svg" alt="SPILL"/>
+                        <img class="card-spill" src="/spill/IMG/Horizontal\ Black.svg" alt="SPILL"/>
                     </div>
                 </div>
             </div>

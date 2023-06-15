@@ -326,7 +326,7 @@ code{
     height: var(--logo-about-size);
     border-radius: 30px;
     display: block;
-    background: url(/IMG/Square\ Black.svg);
+    background: url(/spill/IMG/Square\ Black.svg);
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
@@ -581,21 +581,21 @@ code{
 }
 
 .progBack{
-    background: url(/IMG/home/Prog_R.png);
+    background: url(/spill/IMG/home/Prog_R.png);
     background-position: left;
     background-size: cover;
 }.progFront{
-    background: url(/IMG/home/Prog_L.png);
+    background: url(/spill/IMG/home/Prog_L.png);
     background-position: right;
     background-size: cover;
 }
 
 .desBack{
-    background: url(/IMG/home/Dis_L.png);
+    background: url(/spill/IMG/home/Dis_L.png);
     background-position: right;
     background-size: cover;
 }.desFront{
-    background: url(/IMG/home/Dis_R.png);
+    background: url(/spill/IMG/home/Dis_R.png);
     background-position: left;
     background-size: cover;
 }
@@ -823,7 +823,7 @@ code{
     width: 50px;
     height: 50px;
     display: block;
-    background-image: url(/IMG/wa.png);
+    background-image: url(/spill/IMG/wa.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
