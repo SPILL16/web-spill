@@ -121,8 +121,10 @@ html{
 }.index-logo-wraper{
     background-color: transparent;
     border: 0;
+    -webkit-tap-highlight-color: transparent;
 }.index-logo:hover{
     transform: scale(1.01);
+    -webkit-tap-highlight-color: transparent;
 }.index-content{
     display: flex;
     flex-direction: column;
@@ -149,12 +151,10 @@ html{
     flex-direction: column;
     scale: 2;
     transition: all 0.5s linear;
-    -webkit-tap-highlight-color: transparent;
 }.index-menu-icon{
     transition: all 0.5s ease-in-out;
     color: white;
     fill: currentColor;
-    -webkit-tap-highlight-color: transparent;
 }.index-menu-icon:hover{
     transform: translateY(1vh);
 }
