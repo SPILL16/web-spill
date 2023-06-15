@@ -109,6 +109,7 @@ html{
 .index-logo{
     --logo-about-w: clamp(5em, 28vmax, 40em);
     width: var(--logo-about-w);
+    height: auto;
     aspect-ratio: 1/1;
     /* position: absolute;
     top: calc(50vh + var(--nav-height));
@@ -181,8 +182,6 @@ html{
 }
 
 .index-heading{
-    margin-bottom: -12vmin;
-    margin-top: 10vmin;
     color: white;
     text-align: center;
     font-weight:600;
@@ -192,13 +191,12 @@ html{
     flex-direction: column;
     align-items: center;
     font-family: 'Passion One', cursive;
-    font-size: min(30px, 2vw);
+    font-size: clamp(0.5rem, 1.8vw, 1.8rem);
     transition: all 0.5s linear;
 }.spills{
-    font-size: clamp(1.8rem, 5vw, 50px);
+    font-size: clamp(1.8rem, 5vw, 3rem);
 }.click{
     color: white;
-    transform: translateY(-11vmin);
     font-size: min(25px, 1.6vw);
     transition: all 0.5s linear;
     background-color: rgba(0, 0, 0, 0.24);
