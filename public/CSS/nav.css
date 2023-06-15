@@ -24,7 +24,7 @@ body{
     --bg-color-nav-2: var(--gray-5);
     --bg-color-nav-2-hover: var(--gray-6);
 
-    --nav-height: 16vmin;
+    --nav-height: max(16vmin, 4em);
     --nav-height-smol: max(10vmin, 4em);
 
     --nav-a-hover: #b6b6e6;
