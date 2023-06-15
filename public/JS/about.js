@@ -69,7 +69,7 @@ class cardOne extends HTMLElement{
                 <img class="card-stamp" src="/IMG/Square\ Black.svg" alt=""/>
                 <div class="card-header">
                     <p class="card-h">
-                        SPILL Member Card
+                        SPILL Staff Card
                     </p>
                 </div>
                 <div class="card-body">

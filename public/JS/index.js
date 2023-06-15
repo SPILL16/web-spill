@@ -34,7 +34,7 @@ function slideLeft() {
     leftOvr.classList.add("block");
     logo.style.transform = 'translate(-25vw)';
     indexHeading.style.transform = 'translateY(-150%)';
-    helper.style.transform = 'translateY(150%)';
+    helper.style.transform = 'translateY(5em)';
     desH.style.transform = 'translateX(-42vw) rotate(-90deg)';
     desP.style.transform = 'translateX(0)';
     progH.style.transform = 'translateX(-150%) rotate(90deg)';
@@ -65,7 +65,7 @@ function slideRight() {
     rightOvr.classList.add("block");
     logo.style.transform = 'translate(25vw)';
     indexHeading.style.transform = 'translateY(-150%)';
-    helper.style.transform = 'translateY(150%)';
+    helper.style.transform = 'translateY(5em)';
     progH.style.transform = 'translateX(42vw) rotate(90deg)';
     progP.style.transform = 'translateX(0)';
     desH.style.transform = 'translateX(150%) rotate(-90deg)';
@@ -109,7 +109,7 @@ function indexMenuTogler() {
         }, 20);
         circle.style.rotate = '-20deg';
         logo.style.transform = 'translateY(-5vmin)';
-        helper.style.transform = 'translateY(150%)';
+        helper.style.transform = 'translateY(5em)';
         
         progH.style.transform = 'translateX(-150%) rotate(90deg)';
         desH.style.transform = 'translateX(150%) rotate(-90deg)';

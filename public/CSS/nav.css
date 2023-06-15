@@ -25,6 +25,7 @@ body{
     --bg-color-nav-2-hover: var(--gray-6);
 
     --nav-height: 16vmin;
+    --nav-height-smol: 10vmin;
 
     --nav-a-hover: #b6b6e6;
 }
@@ -33,11 +34,13 @@ body{
 
 #main-nav{
     z-index:1000;
-    position:sticky;
+    position:fixed;
     top:0;
     transition-property:all;
     transition-duration:0.25s;
     background:var(--bg-color-nav);
+    min-width: 100vw;
+    min-width: 100dvw;
     /*border-bottom: 2px solid #222;*/
 }
 
@@ -48,6 +51,8 @@ body{
     height:var(--nav-height);
     max-width:1080px;
     margin:0 auto;
+    transition-property:all;
+    transition-duration:0.25s;
 }
 
 .logo{

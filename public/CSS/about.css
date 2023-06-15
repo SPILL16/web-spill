@@ -12,6 +12,7 @@
 body{
     --a-hover: rgb(18, 79, 119);
     --bg-color-nav: var(--gray-5);
+    background-color: var(--gray-6);
 }
 
 /*Main Section*/
