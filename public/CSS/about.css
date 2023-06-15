@@ -212,12 +212,12 @@ code{
     text-decoration-line: none !important;
 }
 
-.morre-a > a{
+.morre-a a{
     color: var(--gray-6) !important;
     text-decoration-line: none !important;
 }
 
-.morre-a > a:hover{
+.morre-a a:hover{
     color:  white !important;
     text-decoration-line: none !important;
 }

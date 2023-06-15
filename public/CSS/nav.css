@@ -236,7 +236,8 @@ body{
     align-items: center;
 }.nav-plus-warper{
     display: grid;
-    grid-template: "home about blog"
+    grid-template: 
+    "home about blog"
     "projek prog dis";
     grid-gap: 10vw;
 }.nav-plus-sub-wraper{
@@ -247,9 +248,12 @@ body{
     color: white;
     fill: currentColor;
     transform: scale(2);
+}.nav-plus-sub-wraper a svg path{
+    fill: currentColor;
 }@media (max-width:600px) {
     .nav-plus-warper{
-        grid-template: "home about"
+        grid-template: 
+        "home about"
         "blog projek"
         "prog dis";
     }
