@@ -5,6 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     background: var(--gray-6);
+    margin-top: 0;
 }
 
 .-wraper{
