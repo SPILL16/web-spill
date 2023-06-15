@@ -2,7 +2,7 @@ class NavBar extends HTMLElement{
     constructor() {
         super();
 
-        this.home = "/index.html";
+        this.home = "/";
         this.about = "/HTML/about.html";
         this.blog = "/404.html"
         this.proj = "/404.html"
