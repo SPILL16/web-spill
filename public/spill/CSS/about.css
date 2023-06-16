@@ -24,9 +24,11 @@ section{
 }
 
 h1{
-    font-size: min(60px, 6vw);
+    font-size: clamp(2rem, 6vw, 4rem);
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    line-height: 1.4em;
+    margin-block: .05em .15em;
 }
 
 h2{
@@ -37,16 +39,16 @@ h2{
 }
 
 h3{
-    font-size: min(35px, 3vw);
+    font-size: clamp(1.2rem, 3vw, 2rem);
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 300;
     line-height: min(3.5rem, 7vw);
 }
 
 h4{
     font-size: min(30px, 2vw);
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     line-height: min(2.5rem, 4vw);
 }
 
@@ -82,6 +84,15 @@ code{
     max-width: min(960px,90vw);
     margin: 0 auto;
     padding: 0vh 0;
+}.c-main{
+    max-width: min(960px,80vw);
+}.c-wider{
+    max-width: min(1100px,90vw);
+    padding-right: 2rem;
+}@media (max-width:540px){
+    .c-wider{
+        padding-right: 0;
+    }
 }
 
 .white{
@@ -101,7 +112,7 @@ code{
     transform: translateY(0);
 }.about-h:hover{
     transform: translateY(-0.2rem);
-    transition: all 0.2s;
+    transition: all 0.3s;
 }.about-h::after{
     content: "";
     display: block;
@@ -111,8 +122,8 @@ code{
     border-radius: 0.5vmin;
     transform: translateY(0);
 }.about-h:hover:after{
-    transform: translateY(0.2rem);
-    transition: all 0.2s;
+    transform: translateY(0.5rem);
+    transition: all 0.3s;
 }
 
 #main-sec{
@@ -124,6 +135,7 @@ code{
     position: relative;
     width: 100%;
     height: 100vh;
+    height: 100dvh;
     background: var(--gray-6);
     background-size: cover;
     display: flex;
@@ -132,7 +144,8 @@ code{
     flex-direction: column;
 }@media (max-width:520px) {
     .main-sec-a{
-        height: 360px;
+        height: 95vh;
+        height: 95dvh;
     }
 }
 
@@ -153,6 +166,11 @@ code{
     /* Technicue by Fireship.io */
     /* Mesh Gradient by csshero.org */
     font-family: monospace;
+    font-size: 1.162em;
+}@media (max-width:520px){
+    .digital{
+        font-size: 1.45em;
+    }
 }.sixteen{
     -webkit-text-fill-color: transparent;
     color: transparent;
@@ -187,11 +205,12 @@ code{
 
     border-radius: 10vw;
     margin:1em auto;
-    padding: 1.2em 1.8em;
+    padding: 1.3em 1.5em;
     width:fit-content;
     color: var(--gray-6);
     transition: all, 0.5s ;
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+    font-weight: 600;
     line-height: 0;
 }
 
@@ -233,6 +252,12 @@ code{
     width: 120vw;
     height: auto;
     left: -5vw;
+}@media (max-width:520px) {
+    .wave-a{
+        transform-origin: 0 50%;
+        transform: scale(3);
+        left: -45vw;
+    }
 }
 
 .wave-1{
@@ -432,7 +457,8 @@ code{
     color: var(--color-h);
     font-size: max(2.2vw, 1rem);
     background: var(--gray-5);
-    padding: 10vmin 12vw 10vmin 8vw;
+    padding-block: max(10vmin, 1.6em) max(10vmin, 1.8em);
+    padding-inline: max(12vmin, 2em) max(8vw, 2.1em);
     position: relative;
     line-height: max(8vmin, 0.8rem);
     font-weight: 600;
@@ -440,10 +466,12 @@ code{
     text-align: justify;
     transition: all 0.5s;
 }.vision-p:hover{
-    padding-inline: 8.4vw 11.6vw;
+    padding-inline: max(calc(12vmin + 10px), 2em) max(calc(8.1vw - 10px), 2.1em);
 }@media (max-width:520px) {
     .vision-p{
         text-align: start;
+        padding-block: max(10vmin, 1.6em) max(10vmin, 1.8em);
+        padding-inline: max(12vmin, 2em) max(8vw, 2.1em);
     }
 }.vision-p::before{
     content: "";
@@ -535,7 +563,7 @@ code{
 /*Main Section*/
 
 #mini-main-section{
-    --mini-home-h: 40vh;
+    --mini-home-h: 40vmin;
     height: var(--mini-home-h);
     width: 100vw;
     position: relative;
@@ -633,7 +661,8 @@ code{
     text-transform: uppercase;
     color: white;
     -webkit-text-stroke: 0.05em var(--gray-6);
-    font-size: 8vw;
+    font-size: max(8vw, 2.2em);
+    font-weight: 800;
 }
 
 /* Proker */
@@ -790,53 +819,4 @@ code{
     width: calc(0.7*var(--card-width));
     opacity: 0.2;
     rotate: 350deg;
-}
-
-/* Hubungi */
-
-#hubungi{
-    --hubungi-h: white;
-    background: var(--gray-6);
-    position: relative;
-}.hubungi-h{
-    text-align: left;
-    color: var(--hubungi-h);
-    /* color: white; */
-    font-weight:600;
-    /* letter-spacing:2.6px; */
-    text-transform: uppercase;
-    font-family: 'Passion One', cursive;
-}.hubungi-h-em{
-    font-size: 5.2vw;
-}.hubungi-sort{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-direction: column;
-    padding-bottom: 8vh;
-}.hubungi-h-2{
-    color: white;
-    font-size: 2vw;
-}
-
-.logo-wa{
-    width: 50px;
-    height: 50px;
-    display: block;
-    background-image: url(/spill/IMG/wa.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    fill: currentColor;
-    color: white;
-}
-
-.hubungi-p-wraper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}.hubungi-p{
-    color: white;
-    font-size: 1.8vw;
-    margin-left: 1vw;
 }

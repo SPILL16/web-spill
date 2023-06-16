@@ -11,3 +11,54 @@
     color: white;
     font-size: 1vw;
 }
+
+/* Hubungi */
+
+#hubungi{
+    --hubungi-h: white;
+    background: var(--gray-6);
+    position: relative;
+}.hubungi-h{
+    text-align: left;
+    color: var(--hubungi-h);
+    /* color: white; */
+    font-weight:600;
+    /* letter-spacing:2.6px; */
+    text-transform: uppercase;
+    font-family: 'Passion One', cursive;
+}.hubungi-h-em{
+    font-size: 5.2vw;
+}.hubungi-sort{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    max-width: min(960px,90vw);
+    margin: 0 auto;
+    padding: 12vw 0 8vh 0;
+}.hubungi-h-2{
+    color: white;
+    font-size: 2vw;
+}
+
+.logo-wa{
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-image: url(/spill/IMG/wa.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    fill: currentColor;
+    color: white;
+}
+
+.hubungi-p-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.hubungi-p{
+    color: white;
+    font-size: 1.8vw;
+    margin-left: 1vw;
+}
