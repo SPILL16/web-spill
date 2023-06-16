@@ -1,0 +1,268 @@
+html{
+    overflow: hidden;
+}
+
+#main-section{
+    height:calc(100vh - var(--nav-height));
+    height:calc(100dvh - var(--nav-height));
+    width: 100vw;
+    width: 100dvw;
+}
+
+.link .home{
+    color:var(--text-color-nav-grey);
+    transition-property:all;
+    transition-duration:0.25s;
+}
+
+.nav-plus-home{
+    color: var(--gray-3);
+    cursor: default;
+}
+
+/*Main Section*/
+
+.panel{
+    position: absolute;
+    height:calc(100vh - var(--nav-height));
+    width: 50vw;
+    transition: all 0.5s ease-in;
+}.panel-tringger{
+    position: absolute;
+    height:calc(100vh - var(--nav-height));
+    width: 10vw;
+    transition: all 0.5s ease-in;
+    background: linear-gradient(
+        90deg, 
+        rgba(255,255,255,0) 0%, 
+        rgba(30, 30, 30, 0.7) 100%
+        );
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}.panel-block{
+    position: absolute;
+    height:calc(100vh - var(--nav-height));
+    width: 15vw;
+    background: transparent;
+}.panel-full{
+    position: absolute;
+    height:calc(100vh - var(--nav-height));
+    width: 100vw;
+}
+
+.panel-left{
+    left: 0;
+}.panel-right{
+    right: 0;
+}
+
+.tringger-left{
+    transform: rotate(180deg);
+}
+
+.progBack{
+    background: url(/spill/IMG/home/Prog_R.png);
+    background-position: left;
+    background-size: cover;
+}.progFront{
+    background: url(/spill/IMG/home/Prog_L.png);
+    background-position: right;
+    background-size: cover;
+}
+
+.desBack{
+    background: url(/spill/IMG/home/Dis_L.png);
+    background-position: right;
+    background-size: cover;
+}.desFront{
+    background: url(/spill/IMG/home/Dis_R.png);
+    background-position: left;
+    background-size: cover;
+}
+
+.arrow{
+    color: white;
+    fill: currentColor;
+}
+
+.overlay-right{
+    background: linear-gradient(
+        270deg, 
+        rgba(255,255,255,0) 0%, 
+        rgba(30, 30, 30, 0.7) 100%
+        );
+}.overlay-left{
+    background: linear-gradient(
+        90deg, 
+        rgba(255,255,255,0) 0%, 
+        rgba(30, 30, 30, 0.7) 100%
+        );
+}
+
+.noBlock{
+    display: none;
+}.block{
+    display: block;
+}
+
+.index-logo{
+    --logo-about-w: clamp(5em, 28vmax, 40em);
+    width: var(--logo-about-w);
+    height: auto;
+    aspect-ratio: 1/1;
+    /* position: absolute;
+    top: calc(50vh + var(--nav-height));
+    left: 50vw;
+    transform: translate(-50%, -60%); */
+    z-index: 999;
+    /* filter: drop-shadow(10px 10px 10px var(--gray-6)); */
+    transition: rotate 0.5s linear;
+    cursor: pointer;
+}.index-logo-wraper{
+    background-color: transparent;
+    border: 0;
+    -webkit-tap-highlight-color: transparent;
+}.index-logo:hover{
+    transform: scale(1.01);
+    -webkit-tap-highlight-color: transparent;
+}.index-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - var(--nav-height));
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 10px black);
+    padding-bottom: 2em;
+}.index-wraper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    align-items: center;
+    margin-bottom: 2vmin;
+}.index-menu-wrap{
+    width: 15em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scale: 2;
+    transition: all 0.5s linear;
+}.index-menu-icon{
+    transition: all 0.5s ease-in-out;
+    color: white;
+    fill: currentColor;
+}.index-menu-icon:hover{
+    transform: translateY(1vh);
+}
+
+.about-link{
+    text-align: center;
+    color: white;
+    font-size: max(1.1vw, 0.6rem);
+    transition: transform, 0.5s ;
+}
+
+.imw1{
+    transform: translate(20%);
+}.imw2{
+    transform: translate(-20%);
+}
+
+.index-appear{
+    display: flex;
+    opacity: 0;
+}.index-slide{
+    opacity: 1;
+    transform: translate(0);
+}
+
+.index-heading{
+    color: white;
+    text-align: center;
+    font-weight:600;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Passion One', cursive;
+    font-size: clamp(0.5rem, 1.8vw, 1.8rem);
+    transition: all 0.5s linear;
+}.spills{
+    font-size: clamp(1.8rem, 5vw, 3rem);
+}.click{
+    color: white;
+    font-size: min(25px, 1.6vw);
+    transition: all 0.5s linear;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.prog-content{
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    height: calc(100vh - var(--nav-height));
+    justify-content: flex-end;
+    align-items: center;
+    filter: drop-shadow(0px 0px 10px black);
+}.prog-h{
+    transform: rotate(90deg);
+    position: absolute;
+    left: -1.5em;
+    text-align: center;
+    color: white;
+    font-family: 'Passion One', cursive;
+    font-size: min(30px, 2vw);
+    font-weight:600;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in;
+    width: 11.5em;
+}.prog-p{
+    max-width: 40vw;
+    margin-left: 6vw;
+    font-size: min(25px, 1.6vw);
+    color: white;
+    text-align: justify;
+    transform: translateX(-150%);
+    transition: all 0.5s ease-in;
+}
+
+.des-content{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: var(--nav-height);
+    right: 0;
+    height: calc(100vh - var(--nav-height));
+    justify-content: flex-end;
+    align-items: center;
+    filter: drop-shadow(0px 0px 10px black);
+}.des-h{
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -1.5em;
+    text-align: center;
+    color: white;
+    font-family: 'Passion One', cursive;
+    font-size: min(30px, 2vw);
+    font-weight:600;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in;
+    width: 11.5em;
+}.des-p{
+    max-width: 40vw;
+    margin-right: 6vw;
+    font-size: min(25px, 1.6vw);
+    color: white;
+    text-align: justify;
+    transform: translateX(150%);
+    transition: all 0.5s ease-in;
+}
