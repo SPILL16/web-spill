@@ -2,18 +2,18 @@ class Footer extends HTMLElement{
     constructor() {
         super();
 
-        this.home = "/";
-        this.about = "/HTML/about.html";
-        this.blog = "/404.html"
-        this.proj = "/404.html"
-        this.desHome = "/HTML/design/design.html";
-        this.progHome = "/404.html";
+        this.home = "/spill/";
+        this.about = "/spill/HTML/about.html";
+        this.blog = "/spill/404.html"
+        this.proj = "/spill/404.html"
+        this.desHome = "/spill/HTML/design/design.html";
+        this.progHome = "/spill/404.html";
 
         this.innerHTML = 
         `
             <footer>
                 <div id="hubungi">
-                    <div class="container hubungi-sort">
+                    <div class="hubungi-sort">
                         <svg class="wave2 wave-debug-idk"
                             width="2655.4221"
                             height="313.12579"
@@ -34,7 +34,7 @@ class Footer extends HTMLElement{
                         </svg>
                         <h2 class="hubungi-h"><span class="hubungi-h-em">Gimana?</span> Tertarik?</h2>
                         <h3 class="hubungi-h-2">Yuk Hubungi Kami</h3>
-                        <div class="hubungi-p-wraper">
+                        <a class="hubungi-p-wraper"  href="https://wa.me/62895631408165">
                             <svg class="logo-wa" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 308 308" style="enable-background:new 0 0 308 308;" xml:space="preserve">
                             <g id="XMLID_468_">
@@ -62,7 +62,7 @@ class Footer extends HTMLElement{
                                 <br/ >
                                 +62 895-6314-08165
                             </p>
-                        </div>
+                        </a>
                 </div>
 
                 <div id="copyr">
