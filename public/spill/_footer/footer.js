@@ -1,5 +1,3 @@
-import "./footer.css"
-
 class Footer extends HTMLElement{
     constructor() {
         super();

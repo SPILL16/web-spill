@@ -16,7 +16,7 @@ body{
 
 body{
     --nav-height: 16vmin;
-    margin-top: var(--nav-height);
+    padding-top: var(--nav-height);
 }
 
 ::-webkit-scrollbar{

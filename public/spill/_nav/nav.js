@@ -1,5 +1,3 @@
-import "./nav.css"
-
 class NavBar extends HTMLElement{
     constructor() {
         super();
