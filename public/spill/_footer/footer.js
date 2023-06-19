@@ -1,12 +1,14 @@
+import "./footer.css"
+
 class Footer extends HTMLElement{
     constructor() {
         super();
 
         this.home = "/spill/";
-        this.about = "/spill/HTML/about.html";
+        this.about = "/spill/about/";
         this.blog = "/spill/404.html"
         this.proj = "/spill/404.html"
-        this.desHome = "/spill/HTML/design/design.html";
+        this.desHome = "/spill/HTML/design/";
         this.progHome = "/spill/404.html";
 
         this.innerHTML = 
