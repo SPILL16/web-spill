@@ -5,7 +5,7 @@ window.mobileCheck = function() {
 };
 
 if (mobileCheck) {
-    document.location.href="/";
+    window.location.href="/";
 }
 
 const right = document.querySelector(".desFront");
