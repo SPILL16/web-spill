@@ -2,12 +2,12 @@ class NavBar extends HTMLElement{
     constructor() {
         super();
 
-        this.home = "/spill/";
-        this.about = "/spill/about/";
-        this.blog = "/spill/404.html"
-        this.proj = "/spill/404.html"
-        this.desHome = "/spill/design/";
-        this.progHome = "/spill/404.html";
+        this.home = '/spill/';
+        this.about = '/spill/about/';
+        this.blog = '/spill/404.html" rel="nofollow';
+        this.proj = '/spill/404.html" rel="nofollow';
+        this.desHome = '/spill/design/" rel="nofollow';
+        this.progHome = '/spill/404.html" rel="nofollow'; // rel nofollow added cause the page is still on working
 
         this.innerHTML = 
         `
@@ -27,10 +27,10 @@ class NavBar extends HTMLElement{
                     <ul class="link">
                         <li><a class="home" href="${this.home}" tabindex="2">Home</a></li>
                         <li><a class="about" href="${this.about}" tabindex="3">About</a></li>
-                        <button class="divisi-wraper" tabindex="4">
-                            <li class="divisi">Divison</li>
+                        <li><button class="divisi-wraper" tabindex="4">
+                            <p class="divisi">Divison</p>
                             <svg class="divisi-i" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>
-                        </button>
+                        </button></li>
                         <li><a class="blog" href="${this.blog}" tabindex="7">Blog</a></li>
                     </ul>
                     <div class="hbr-c-wraper">    
