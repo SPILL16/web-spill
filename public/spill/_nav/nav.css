@@ -44,6 +44,10 @@ body{
     /*border-bottom: 2px solid #222;*/
 }
 
+#main-nav.nav-ext {
+    background: var(--gray-6) !important;
+}
+
 .navbar{
     display:flex;
     justify-content:space-between;
@@ -53,6 +57,7 @@ body{
     margin:0 auto;
     transition-property:all;
     transition-duration:0.25s;
+    z-index: 9999;
 }
 
 .logo{
@@ -222,8 +227,8 @@ body{
 /* nav-plus */
 
 .nav-plus{
-    height: calc(100vh - var(--nav-height));
-    /* margin-top: ; */
+    height: 100vh;
+    margin-top: calc(-1 * var(--nav-height));
     width: 100vw;
     background: var(--gray-6);
     display: none;
