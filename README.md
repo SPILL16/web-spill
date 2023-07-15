@@ -1,6 +1,7 @@
-# Wellcome to SPILL Website Repo
+# Wellcome to SPILL Website Codebase Repo
 
-### Be careful when pull push
+## Codebase Documentation Coming Soon
+If I not forget about it
 
-[Link WP](https://kesiswaan.sman16-sby.sch.id/spill/)\
-[Link Vercel](https://web-spill.vercel.app)
+[Link WordPress](https://kesiswaan.sman16-sby.sch.id/spill/) (Production)\
+[Link Vercel](https://web-spill.vercel.app) (Development & Testing)
