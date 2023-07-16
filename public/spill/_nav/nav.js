@@ -34,7 +34,7 @@ class NavBar extends HTMLElement{
                         <li><a class="blog" href="${this.blog}" tabindex="7">Blog</a></li>
                     </ul>
                     <div class="hbr-c-wraper">    
-                        <button class="hbr-c" aria-controls="primary-navigation" tabindex="8">
+                        <button class="hbr-c" aria-controls="primary-navigation" tabindex="8" title="primary navigation">
                             <div class="hbr"></div>
                         </button>
                     </div>    

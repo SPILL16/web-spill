@@ -23,7 +23,7 @@ section{
     --font-size-1: clamp(60px, 2em, 20px);
 }
 
-h1{
+h1, .h1{
     font-size: clamp(2rem, 6vw, 4rem);
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -31,21 +31,21 @@ h1{
     margin-block: .05em .15em;
 }
 
-h2{
+h2, .h2{
     font-size: clamp(1.8rem, 5vw, 50px);
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     /* line-height: 4rem; */
 }
 
-h3{
+h3, .h3{
     font-size: clamp(1.2rem, 3vw, 2rem);
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: min(3.5rem, 7vw);
 }
 
-h4{
+h4, .h4{
     font-size: min(30px, 2vw);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -206,6 +206,7 @@ code{
     border-radius: 10vw;
     margin:1em auto;
     padding: 1.3em 1.5em;
+    width: -moz-fit-content;
     width:fit-content;
     color: var(--gray-6);
     transition: all, 0.5s ;
