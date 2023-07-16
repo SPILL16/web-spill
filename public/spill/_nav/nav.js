@@ -27,14 +27,16 @@ class NavBar extends HTMLElement{
                     <ul class="link">
                         <li><a class="home" href="${this.home}" tabindex="2">Home</a></li>
                         <li><a class="about" href="${this.about}" tabindex="3">About</a></li>
-                        <li><button class="divisi-wraper" tabindex="4">
-                            <p class="divisi">Divison</p>
-                            <svg class="divisi-i" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>
-                        </button></li>
+                        <li>
+                            <button class="divisi-wraper" tabindex="4" type="button">
+                                <p class="divisi">Divison</p>
+                                <svg class="divisi-i" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>
+                            </button>
+                        </li>
                         <li><a class="blog" href="${this.blog}" tabindex="7">Blog</a></li>
                     </ul>
                     <div class="hbr-c-wraper">    
-                        <button class="hbr-c" aria-controls="primary-navigation" tabindex="8" title="primary navigation">
+                        <button class="hbr-c" aria-controls="primary-navigation" tabindex="8" title="primary navigation" type="button">
                             <div class="hbr"></div>
                         </button>
                     </div>    

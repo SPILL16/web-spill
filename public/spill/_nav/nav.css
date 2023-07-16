@@ -97,8 +97,8 @@ body{
 
 .link li{
     color:var(--text-color-nav);
-    transition-property:all;
-    transition-duration:0.25s;
+    /* transition-property:all;
+    transition-duration:0.25s; */
     list-style-type:none;
     font-size: min(20px, 4vw);
     font-weight:400;
@@ -119,6 +119,8 @@ body{
     cursor: pointer;
     background: transparent;
     border: 0;
+    color: inherit;
+    font: inherit;
 }.divisi-i{
     color: white;
     fill: currentColor;
@@ -126,8 +128,8 @@ body{
     transition: all 0.5s ease-in-out;
     margin-left: -12px;
     margin-right: -18px;
-}.divisi-i:hover{
-    transform: scale(0.5) rotateX(180deg);
+/* }.divisi-i:hover{
+    transform: scale(0.5) rotateX(180deg); */
 }
 
 .dropdown{

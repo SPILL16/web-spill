@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-   <title>Home | Sixteen Programming Illustrator Website</title>
-   <!-- Meta -->
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Metadata -->
+   <title>Home | Sixteen Programming Illustrator Website</title>
    <meta name="description" content="Selamat datang di Website Ekstrakulikuler Sixteen Programming Illustrator SMA Negeri 16 Surabaya">
    <meta name="keywords" content="spill, sixteen programming illustrator, disain, programming, home, home spill, sman 16 surabaya">
    <meta name="twitter:card" content="summary">
@@ -73,6 +73,14 @@
 
 </head>
 <body>
+   <script>
+      if (window.matchMedia("(max-width: 767px)").matches)
+      {
+         setTimeout(() => {
+            window.location.href = "/spill/about";
+         }, 200);
+      }
+   </script>
     
    <nav-bar></nav-bar>
     
@@ -127,7 +135,7 @@
                      Tentang Kami
                   </p></a>
                </div>
-               <button title="home menu" class="index-logo-wraper">   
+               <button title="home menu" class="index-logo-wraper" type="button">   
                   <svg
                   class="index-logo"
                   id="Layer_1"
