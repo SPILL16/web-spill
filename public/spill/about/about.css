@@ -791,7 +791,9 @@ code{
     width: calc(2/4 * var(--pict-height));
 }
 
-.card-nama{
+.card-text{
+    margin-right: 1em;
+}.card-nama{
     font-family: Arial, Helvetica, sans-serif;
     font-size: min(1.2em, 5vw);
     font-weight: bold;
