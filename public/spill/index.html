@@ -73,15 +73,16 @@
 
 </head>
 <body>
+   <!-- Temporary redirect mobile users -->
    <script>
       if (window.matchMedia("(max-width: 767px)").matches)
       {
          setTimeout(() => {
             window.location.href = "/spill/about";
-         }, 200);
+         }, 100);
       }
    </script>
-    
+   
    <nav-bar></nav-bar>
     
     <section id="main-section">

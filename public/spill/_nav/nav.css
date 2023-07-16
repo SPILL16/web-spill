@@ -26,6 +26,8 @@ body{
 
     --nav-height: max(16vmin, 4em);
     --nav-height-smol: max(10vmin, 4em);
+    --nav-height: max(16dvmin, 4em);
+    --nav-height-smol: max(10dvmin, 4em);
 
     --nav-a-hover: #b6b6e6;
 }
@@ -229,8 +231,8 @@ body{
 /* nav-plus */
 
 .nav-plus{
-    height: 100vh;
-    margin-top: calc(-1 * var(--nav-height));
+    height: calc(100vh - var(--nav-height));
+    height: calc(100dvh - var(--nav-height));
     width: 100vw;
     background: var(--gray-6);
     display: none;
@@ -246,7 +248,7 @@ body{
     grid-template: 
     "home about blog"
     "projek prog dis";
-    grid-gap: 10vw;
+    grid-gap: 10vmax;
 }.nav-plus-sub-wraper{
     display: flex;
     justify-content: center;
@@ -258,7 +260,11 @@ body{
 }.nav-plus-sub-wraper a svg path{
     fill: currentColor;
 }@media (max-width:600px) {
-    .nav-plus-warper{
+    .nav-plus{
+        align-items: baseline;
+        padding-top: calc(8vh + var(--nav-height));
+        padding-top: calc(8dvh + var(--nav-height));
+    }.nav-plus-warper{
         grid-template: 
         "home about"
         "blog projek"

@@ -62,7 +62,7 @@ class NavBar extends HTMLElement{
                         </div>
                         <div class="nav-plus-sub-wraper nav-plus-prog">
                             <a href="${this.progHome}"><svg class="nav-plus-i nav-plus-prog" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m34 36-2.1-2.1 9.8-9.9-9.8-9.9L34 12l12 12Zm-20 0L2 24l12-12 2.1 2.1L6.3 24l9.8 9.9Zm2-10.25q-.7 0-1.225-.525Q14.25 24.7 14.25 24q0-.7.525-1.225.525-.525 1.225-.525.7 0 1.225.525.525.525.525 1.225 0 .7-.525 1.225-.525.525-1.225.525Zm8 0q-.7 0-1.225-.525Q22.25 24.7 22.25 24q0-.7.525-1.225.525-.525 1.225-.525.7 0 1.225.525.525.525.525 1.225 0 .7-.525 1.225-.525.525-1.225.525Zm8 0q-.7 0-1.225-.525Q30.25 24.7 30.25 24q0-.7.525-1.225.525-.525 1.225-.525.7 0 1.225.525.525.525.525 1.225 0 .7-.525 1.225-.525.525-1.225.525Z"/></svg></a>
-                            <p><a class="nav-plus-prog" href="${this.progHome}">Programming</a></p>
+                            <p><a class="nav-plus-prog prog-name" href="${this.progHome}">Programming</a></p>
                         </div>
                         <div class="nav-plus-sub-wraper nav-plus-dis">
                             <a href="${this.desHome}"><svg class="nav-plus-i nav-plus-dis" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h34V11H7v26Zm4.85-5H36.2l-7.35-9.95-6.55 8.7-4.6-6.45ZM7 37V11v26Z"/></svg></a>
@@ -146,3 +146,9 @@ divisi.addEventListener('click', () => {
         dpdOpen = false;
     }
 })
+
+let progNav = document.querySelector(".prog-name")
+if (window.matchMedia("(max-width: 767px)").matches)
+{
+    progNav.style.fontSize = "10px";
+}
