@@ -72,6 +72,15 @@
     color: white;
     font-size: 1.4vmax;
     font-size: 1.4dvmax;
-    margin-left: 1vw;
+    margin-left: 2vmin;
     line-height: 1.15em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.v-line{
+    border-left: 1px solid white;
+    margin-left: 2vmin;
+    font-size: 1.4vmax;
+    font-size: 1.4dvmax;
+    height: 2em;
 }
